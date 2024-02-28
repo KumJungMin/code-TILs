@@ -1,6 +1,7 @@
 function isMultipleOfFive(num) {
     const numArr = num.toString().split('');
-    const msg = (+numArr[0] + +numArr[1]) % 5 ? 'No' : 'Yes';
+    const sum = +numArr[0] + +numArr[1];
+    const msg = !(sum % 5) && !(sum  % 2) ? 'Yes' : 'No';
     console.log(msg);
 }
 
