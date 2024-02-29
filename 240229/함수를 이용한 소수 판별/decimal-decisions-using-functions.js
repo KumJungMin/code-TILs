@@ -1,7 +1,10 @@
 function print(a, b) {
+    if (a < 2) console.log(0);
     let sum = 0;
-    for (let i = a; i <= b; i++) {
-        if (isPrime(i)) sum += i;
+    if (a > 1) {
+        for (let i = a; i <= b; i++) {
+            if (isPrime(i)) sum += i;
+        }
     }
     console.log(sum);
 }
