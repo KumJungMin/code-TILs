@@ -1,5 +1,4 @@
 function print(a, b) {
-    if (a < 2) console.log(0);
     let sum = 0;
     if (a > 1) {
         for (let i = a; i <= b; i++) {
